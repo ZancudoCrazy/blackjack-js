@@ -20,7 +20,7 @@ export const addPoints = ( player, deck ) =>{
     player.board.querySelector('small').innerText = player.points;
 
     const cardImg = document.createElement('img');
-    cardImg.src = `../../../assets/cards/${card}.png`;
+    cardImg.src = `./assets/cards/${card}.png`;
     cardImg.classList.add('card');
 
     player.board.querySelector('[name="hand"]').append( cardImg );
